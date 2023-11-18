@@ -15,9 +15,9 @@ import { RouterLink, RouterView } from 'vue-router'
           Semifinal Project
         </div>
       </div>
-      <nav class="flex-1 flex flex-col justify-center items-stretched text-center gap-4 text-gray-400">
-        <a href="#" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Home</a>
-        <a href="#" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Products</a>
+      <nav class="flex flex-col justify-start py-12 items-stretched text-center gap-4 text-gray-400">
+        <RouterLink to="/" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Home</RouterLink>
+        <RouterLink to="/products" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Products</RouterLink>
         <a href="#" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Categories</a>
         <a href="#" class="bg-gray-800 py-4 hover:bg-gray-700 hover:text-white hover:py-5 duration-200">Transactions</a>
       </nav>
@@ -30,8 +30,8 @@ import { RouterLink, RouterView } from 'vue-router'
         Copyright &copy; 2023.<br />All rights reversed.
       </div>
     </div>
-    <div class="main-content bg-green-200 flex-1">
-      
+    <div class="main-content bg-green-100 flex-1">
+      <RouterView />
     </div>
   </div>
 </template>
