@@ -1,7 +1,7 @@
 <template>
     <div class="w-[370px] border border-green-400 shadow-lg mb-8 flex flex-col">
         <img :src="product.thumbnail" class="product-image" alt="">
-        <h3 class="p-4 bg-white border-b font-bold border-green-400">{{ product.title }}</h3>
+        <h3 class="p-4 bg-amber-800 text-white border-b font-bold border-green-400">{{ product.title }}</h3>
         <div class="flex-1 bg-gray-200">
             <div class="p-4 text-gray-600 italic">{{ product.description }}</div>
         </div>
